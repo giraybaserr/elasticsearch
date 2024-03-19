@@ -24,6 +24,7 @@ Follow these steps to deploy ElasticSearch on your Kubernetes cluster:
    Elastic Helm charts enable you to easily deploy ElasticSearch on Kubernetes. First, add the Elastic Helm chart repository:
 
    helm repo add elastic https://helm.elastic.co
+   
    helm repo update
 
 ## Clone the ElasticSearch Helm Chart Repository
@@ -31,6 +32,7 @@ Follow these steps to deploy ElasticSearch on your Kubernetes cluster:
 Clone the ElasticSearch Helm chart repository from GitHub and navigate into the cloned directory:
 
 git clone https://github.com/giraybaserr/elasticsearch.git
+
 cd elasticsearch
 
 ## Deploy ElasticSearch with Helm

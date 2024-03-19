@@ -13,44 +13,45 @@ Ensure you have the following tools installed and configured:
 
 Follow these steps to deploy ElasticSearch on your Kubernetes cluster:
 
- **Create a Namespace for ElasticSearch**
+## Create a Namespace for ElasticSearch
 
    Before deploying ElasticSearch, create a dedicated namespace in your Kubernetes cluster:
 
-   kubectl create namespace <namespace>
+   kubectl create namespace "namespace"
 
-**Clone the ElasticSearch Helm Chart Repository**
+## Clone the ElasticSearch Helm Chart Repository
 
 Clone the ElasticSearch Helm chart repository from GitHub and navigate into the cloned directory:
 
 git clone https://github.com/giraybaserr/elasticsearch.git
 cd elasticsearch
 
-**Checkout the Desired Version**
+## Checkout the Desired Version
 
 Switch to the ElasticSearch version 7.10 branch:
 
 git checkout 7.10
 
-**Deploy ElasticSearch with Helm**
+## Deploy ElasticSearch with Helm
 
 Use Helm to deploy ElasticSearch into your chosen namespace:
 
-helm install elasticsearch . --namespace <namespace>
+helm install elasticsearch . --namespace "namespace"
 
-**Verify the Deployment**
+## Verify the Deployment
 
 Check that the ElasticSearch pods are up and running in your namespace:
 
-kubectl get pods -n <namespace>
+kubectl get pods -n "namespace"
 
-**Access ElasticSearch**
+## Access ElasticSearch
 
 To access the ElasticSearch API, set up port forwarding to one of the ElasticSearch pods:
 
-kubectl port-forward service/elasticsearch-master 9200:9200 -n <namespace>
+kubectl port-forward service/elasticsearch-master 9200:9200 -n "namespace"
 
-**Cleanup**
+## Cleanup
+
 To delete the ElasticSearch deployment from your cluster:
 
 helm delete elasticsearch -n <namespace>

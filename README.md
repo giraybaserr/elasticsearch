@@ -57,6 +57,6 @@ kubectl port-forward service/elasticsearch-master 9200:9200 -n "namespace"
 
 To delete the ElasticSearch deployment from your cluster:
 
-helm delete elasticsearch -n <namespace>
+helm delete elasticsearch -n "namespace"
 
 

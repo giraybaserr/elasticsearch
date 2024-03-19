@@ -1,4 +1,4 @@
-# ElasticSearch Deployment on Kubernetes
+# ElasticSearch 7.10 Deployment on Kubernetes
 
 This guide provides step-by-step instructions on how to deploy ElasticSearch version 7.10 on your Kubernetes cluster using Helm.
 

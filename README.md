@@ -26,12 +26,6 @@ Clone the ElasticSearch Helm chart repository from GitHub and navigate into the 
 git clone https://github.com/giraybaserr/elasticsearch.git
 cd elasticsearch
 
-## Checkout the Desired Version
-
-Switch to the ElasticSearch version 7.10 branch:
-
-git checkout 7.10
-
 ## Deploy ElasticSearch with Helm
 
 Use Helm to deploy ElasticSearch into your chosen namespace:
